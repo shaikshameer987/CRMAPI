@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Infosys",
+        "website": "www.infosys.com",
+        "ceo": "Uknown",
+        "NoOfEmployees": 200000,
+        "establishedYear": 1995,
+        "turnover": 100000000
+    },
+    {
+        "name":"TCS",
+        "website":"www.tcs.com",
+        "ceo":"Uknown",
+        "NoOfEmployees": 300000,
+        "establishedYear": 1995,
+        "turnover": 200000000
+    },
+    {
+        "name":"Google",
+        "website":"www.google.com",
+        "ceo":"Sundar Pichaiah",
+        "NoOfEmployees": 300000,
+        "establishedYear": 1995,
+        "turnover": 200000000
+    }
+]
