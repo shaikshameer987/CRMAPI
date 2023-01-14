@@ -6,8 +6,10 @@ const connectDB = require("./DB/connect")
 const customersRouter = require("./Routes/customersRoutes")
 const PORT = process.env.PORT || 4000
 
+// using express.json() to parse the body of the request.
 app.use(express.json())
 
+// using middleware to set the headers for the response.
 app.use((req, res, next) => {
 
     // Website you wish to allow to connect
@@ -31,7 +33,9 @@ app.use("/api/customers", customersRouter)
 
 const startServer = async () => {
     try {
+        // waiting for the connection to the db before starting listening to api.
         await connectDB(process.env.DATABASE_URL)
+        // starting listening to server after successfull connection to the DB.
         app.listen(PORT, () => {
             console.log("Server started...")
         })
